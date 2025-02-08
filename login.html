@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://static.tildacdn.com/tild3330-3261-4137-b331-663763343166/favicon_3.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="css/css2.css" rel="stylesheet">
+    <script src="js/script.js" defer="defer"></script>
+    <title>Форма авторизации - blackati.github.io</title>
+</head>
+<body>
+   <form class="form" id="form" style="display: flex;">
+       <h2 class="header">Форма авторизации</h2>
+       <input type="email" class="input" name="mail" id="mail" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required="">
+       <input type="password" class="input" name="pass" id="pass" placeholder="пароль" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{7,}" required="">
+       <button id="loginButton" disabled="disabled">Войти</button>
+       <button class="forgot defaultButton" id="forgotEmailButton">Забыли пароль?</button>
+   </form>
+   <form class="form" id="forgotForm" style="display: none;">
+       <h2 class="header">Восстановите пароль</h2>
+       <input type="email" class="input" name="mail" id="mailForgot" placeholder="E-mail">
+       <button id="restoreEmailButton">Отправить код</button>
+    <button id="exitRestoreButton" class="exitButton defaultButton"><img class="exitIcon" src="img/cross.svg" alt="exit icon"></button>
+   </form>
+   <div class="message" id="message" style="display: none;">
+       <h2 id="messageHeader">Нужно исправить проблему валидации</h2>
+       <button id="exitMessageButton" class="exitButton defaultButton"><img class="exitIcon" src="img/cross.svg" alt="exit icon"></button>
+   </div>
+   <a href="https://blackati.github.io/" class="link">Вернуться на главную страницу</a>
+
+</body></html>
